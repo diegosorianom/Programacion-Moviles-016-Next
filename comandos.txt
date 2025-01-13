@@ -1,0 +1,16 @@
+controller.ts --> es el archivo para meter los get, put, post, etc.
+ctrl + espacio --> mostrar opciones a completar
+
+node --version
+npm i -g @nestjs/clidir
+nest --version
+nest --help 
+nest new your-name-project
+npm run start:dev
+
+ctrl + c (salir)
+nest g co controllers/categories (por carpetas)
+nest g co controllers/categories --flat (mismo directorio)
+
+nest g co controllers/products
+nest g co controllers/brands
