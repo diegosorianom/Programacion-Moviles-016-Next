@@ -21,6 +21,19 @@ let ProductsController = class ProductsController {
     getProducts2(limit = 100, offset = 0, brand) {
         return `products limit=> ${limit}`;
     }
+    create(payload) {
+        let data = payload.price;
+        return {
+            message: 'acción de crear',
+            payload: payload.name,
+        };
+    }
+    update(id, payload) {
+        return {
+            id,
+            payload,
+        };
+    }
 };
 exports.ProductsController = ProductsController;
 __decorate([
@@ -39,6 +52,21 @@ __decorate([
     __metadata("design:paramtypes", [Object, Object, String]),
     __metadata("design:returntype", void 0)
 ], ProductsController.prototype, "getProducts2", null);
+__decorate([
+    (0, common_1.Post)(),
+    __param(0, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ProductsController.prototype, "create", null);
+__decorate([
+    (0, common_1.Put)(':id'),
+    __param(0, (0, common_1.Param)('id')),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Number, Object]),
+    __metadata("design:returntype", void 0)
+], ProductsController.prototype, "update", null);
 exports.ProductsController = ProductsController = __decorate([
     (0, common_1.Controller)('products')
 ], ProductsController);

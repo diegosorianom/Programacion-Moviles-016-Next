@@ -14,5 +14,14 @@ nest g co controllers/categories --flat (mismo directorio)
 
 nest g co controllers/products
 nest g co controllers/brands
-
 nest g co controllers/canciones
+
+nest g s services/products --flat
+
+POST http://localhost:3000/products/
+{
+	"name": "200", 
+	"price": 15
+}
+
+nest g s services/productsproducts
