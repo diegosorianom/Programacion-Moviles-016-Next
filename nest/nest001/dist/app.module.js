@@ -14,14 +14,17 @@ const categories_controller_1 = require("./controllers/categories/categories.con
 const products_controller_1 = require("./controllers/products/products.controller");
 const brands_controller_1 = require("./controllers/brands/brands.controller");
 const canciones_controller_1 = require("./controllers/canciones/canciones.controller");
+const products_service_1 = require("./services/products/products.service");
+const peliculas_service_1 = require("./services/peliculas/peliculas.service");
+const peliculas_controller_1 = require("./controllers/peliculas/peliculas.controller");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
         imports: [],
-        controllers: [app_controller_1.AppController, categories_controller_1.CategoriesController, products_controller_1.ProductsController, brands_controller_1.BrandsController, canciones_controller_1.CancionesController],
-        providers: [app_service_1.AppService],
+        controllers: [app_controller_1.AppController, categories_controller_1.CategoriesController, products_controller_1.ProductsController, brands_controller_1.BrandsController, canciones_controller_1.CancionesController, peliculas_controller_1.PeliculasController],
+        providers: [app_service_1.AppService, products_service_1.ProductsService, peliculas_service_1.PeliculasService],
     })
 ], AppModule);
 //# sourceMappingURL=app.module.js.map

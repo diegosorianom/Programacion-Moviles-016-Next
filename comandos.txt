@@ -15,6 +15,7 @@ nest g co controllers/categories --flat (mismo directorio)
 nest g co controllers/products
 nest g co controllers/brands
 nest g co controllers/canciones
+nest g co controllers/peliculas
 
 nest g s services/products --flat
 
@@ -25,3 +26,5 @@ POST http://localhost:3000/products/
 }
 
 nest g s services/productsproducts
+nest g s services/peliculas
+npm i class-validator class-transformer @nestjs/mapped-types
